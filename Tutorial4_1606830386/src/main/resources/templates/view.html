@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>View</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>Nama</th>
+			<th>License Number</th>
+			<th>Fly Hour</th>
+		</tr>
+		<tr th:each="pilot,iterStat : ${pilots}">
+    		<td th:text="${pilot.name}">Name</td>
+    		<td th:text="${pilot.licenseNumber}">License Number</td>
+   			<td th:text="${pilot.flyHour}">Fly Hour</td>
+ 		</tr>
+	</table>
+	
+
+
+</body>
+
+
+
+
+</html>
